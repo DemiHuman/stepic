@@ -1,9 +1,11 @@
-a = input().split
+a = input()
 
-for i in range(len(a)):
-    a[i] = int(a[i])
-
-if a[1]+a[2]+a[3] == a[4]+a[5]+a[6]:
-    print('Счастливый')
+if len(a) == 6:
+    b = int(a[0])+int(a[1])+int(a[2])
+    d = int(a[3])+int(a[4])+int(a[5])
+    if b == d:
+        print('Счастливый')
+    else:
+        print('Обычный')
 else:
-    print('Обычный')
+    print('Только строка в 6 символов')
